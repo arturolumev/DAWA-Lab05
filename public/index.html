@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+
+        <div class="app">
+            <div class="screen join-screen active">
+                <div class="form">
+                    <h2>Ingresar al chat</h2>
+                    <div class="form-input">
+                        <label for="">Nombre de usuario</label>
+                        <input type="text" id="username">
+
+                        <input type="file" id="img">
+                        <div id="preview" class ="styleImage"></div>
+
+                    </div>
+                    <div class="form-input">
+                        <button id="join-user">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="screen chat-screen">
+                <div class="header">
+                    <div class="logo">Chat</div>
+                    <button id="exit-chat">Salir</button>
+                </div>
+                <div class="messages">
+                    <!-- 
+                    // Mensajes de prueba 
+                    <div class="message my-message">
+                        <div>
+                            <div class="name">You</div>
+                            <div class="text">Hi</div>
+                        </div>
+                    </div>
+                    <div class="update">
+                        Otro se unio a la conversacion.
+                    </div>
+                    <div class="message other-message">
+                        <div>
+                            <div class="name">Otro</div>
+                            <div class="text">Hi</div>
+                        </div>
+                    </div>
+                    -->
+                </div>
+                <div class="typebox">
+                    <input type="text" id="message-input">
+                    <button id="send-message">Enviar</button>
+                </div>
+            </div>
+        </div>
+        <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+        <script type="text/javascript" src="socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="code.js"></script>
+    </body>
+</html>
